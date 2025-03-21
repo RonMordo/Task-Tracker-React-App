@@ -36,11 +36,11 @@ function TaskForm({ addTask }) {
 			</label>
 			<label>
 				Description:
-				<input
-					type="text"
+				<textarea
+					rows={6}
 					value={description}
 					onChange={(e) => setDescription(e.target.value)}
-				/>
+				></textarea>
 			</label>
 			<button type="submit">Add Task</button>
 		</form>

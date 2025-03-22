@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import Root from "./components/root/Root";
 import TasksPage from "./containers/tasksPage/TasksPage";
 import TaskForm from "./containers/taskForm/TaskForm";
@@ -12,7 +13,7 @@ function App() {
 	const addTask = (title, deadLine, description) => {
 		setTasks((prevTasks) => [
 			...prevTasks,
-			{ id: prevTasks.length + 1, title, deadLine, description },
+			{ id: uuidv4(), title, deadLine, description },
 		]);
 	};
 

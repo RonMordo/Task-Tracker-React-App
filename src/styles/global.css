@@ -41,7 +41,7 @@ nav a {
 	text-align: center;
 	border: 0 solid white;
 	border-radius: 20rem;
-	padding: 1rem;
+	padding: 0.6rem;
 }
 
 nav a:hover {
